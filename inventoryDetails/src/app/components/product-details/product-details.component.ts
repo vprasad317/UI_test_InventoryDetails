@@ -23,10 +23,11 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe(qParams => {
+      this.params = {};
       if(qParams && Object.keys(qParams).length) {
         this.params = qParams;
-        this.getInventoryDetails();
       }
+      this.getInventoryDetails();
     })
     this.columnDefs = this.service.getColDefs();
     this.getInventoryDetails();
