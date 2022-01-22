@@ -1,0 +1,22 @@
+<div class="mat-elevation-z2 grid-holder">
+<ag-grid-angular
+    *ngIf="!isError"
+    class="ag-theme-material h-100"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [pagination]="true"
+    [paginationPageSize]="100"
+>
+</ag-grid-angular>
+</div>
+
+<div class="error-block-holder py-5" *ngIf="isError">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="d-flex flex-column align-items-center">
+        <h3>
+            Something went wrong please refresh after some time !
+        </h3>
+        <button class="w-25" mat-raised-button color="primary" (click)="getInventoryDetails()">Refresh</button>
+    </div>
+    </div>
+</div>

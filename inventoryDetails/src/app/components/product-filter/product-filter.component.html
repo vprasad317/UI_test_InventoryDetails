@@ -1,0 +1,24 @@
+<div class="filter-container d-flex align-items-center">
+  <div class="ms-auto d-flex flex-row align-items-center mt-3">
+    <div>
+      <b class="me-3 mt-3">Filter By</b>
+    </div>
+    <div>
+      <mat-form-field class="me-3">
+        <mat-label>RAM</mat-label>
+        <mat-select [formControl]="ramFilterCtrl" multiple>
+          <mat-option *ngFor="let ram of ramDataList" [value]="ram">{{ram.value}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field>
+        <mat-label>Hard Disk Type</mat-label>
+        <mat-select [formControl]="hddFilterCtrl">
+          <mat-option *ngFor="let disk of hddDataList" [value]="disk">{{disk.value}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

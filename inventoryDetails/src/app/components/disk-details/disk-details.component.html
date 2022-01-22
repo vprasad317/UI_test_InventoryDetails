@@ -1,0 +1,19 @@
+<div class="disk-details-wrapper">
+    
+    <h4> Summary</h4>
+    <div class="row mt-3">
+        <div class="col">
+            <p><b>Memory</b></p>
+            <p>{{data.memory}} <span>{{data.unit}}</span></p>
+        </div>
+        <div class="col">
+            <p><b>Type</b></p>
+            <p>{{data.type}}</p>
+        </div>
+        <div class="col" *ngIf="data.count">
+            <p><b>Count</b></p>
+            <p>{{data.count}}</p>
+        </div>
+    </div>
+    
+</div>

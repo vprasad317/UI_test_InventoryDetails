@@ -1,0 +1,16 @@
+::ng-deep {
+.ag-center-cols-container, .ag-header-container, .ag-header-row  {
+    width: 100% !important;
+}
+.ag-theme-material .ag-header-row {
+color: #252525 !important;
+background: #f5f5f5;
+  font-weight: 700;
+}
+}
+.error-block-holder {
+  height: 70vh;
+}
+.grid-holder {
+  height: 600px;
+}

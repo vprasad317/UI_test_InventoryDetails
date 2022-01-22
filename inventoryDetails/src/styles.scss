@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "~@angular/material/theming";
+@import '../node_modules/@angular/material/_theming.scss';
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-material.css";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.clickable-link {
+    color: #1a73e8;
+    cursor: pointer;
+}
+
+.text-wrapper {
+    width:80px;
+}
